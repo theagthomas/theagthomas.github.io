@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#butterfly {
+
+		width: 10px;
+		height: 10px;
+		background-color:lightpink;
+		border:5px floralwhite;
+	
+		animation-name: dance;
+		animation-iteration-count: infinite;
+		animation-duration: 5s;
+		position:absolute;
+
+		}
+
+		@keyframes dance{
+
+			0%{
+			width: 100px;
+			height: 100px;
+			left:0px;
+			}
+
+			25%{
+			width: 200px;
+			height: 200px;
+			left:350px;
+			background-color: lavender;
+			}
+
+			50%{
+			width: 300px;
+			height: 300px;
+			transform: rotate(360deg);
+			left:700px;
+			background-color: lightblue;
+			}
+
+			75%{
+			width: 200px;
+			height: 200px;
+			left:350px;
+			background-color: lightgreen;
+			}
+
+			100%{
+			width: 100px;
+			height: 100px;
+			left:0px;
+			background-color: lightyellow;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="butterfly"></div>
+</body>
+</html>
