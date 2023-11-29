@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	
+	</title>
+	<style type="text/css">
+		.box{
+			width:500px;
+			height:350px;
+			background-image:url(https://i.pinimg.com/originals/0d/70/3d/0d703df3cb1d9788365d50bff41df128.gif);
+			background-size:cover;
+			transform: rotate(0deg);
+			transition:1s;
+			background-position:center;
+			border-radius:50%;
+			display:inline-block;
+			opacity:0;
+
+		}
+
+		#box1{
+			background-image:url(https://thoughtcatalog.com/wp-content/uploads/2016/08/giphy2.gif?w=360);
+
+
+
+		}
+		#box2{
+			background-image:url(https://i.pinimg.com/originals/ba/aa/a5/baaaa574ded9e0a53a8f38c0a78eb032.gif);
+
+
+		}
+		
+		#box3{
+			background-image:url(https://i.pinimg.com/originals/9b/bf/3c/9bbf3c04804c6770c5c158dbb26cadaa.gif);
+			background-color:blue;
+
+
+		}
+
+
+
+
+	</style>
+
+</head>
+<body data-new-gr-c-s-check-loaded="14.1139.0" data-gr-ext-installed="">
+	<h1>click for a surprise </h1>
+	<div id="box1" class="box" style="opacity: 1;"></div>
+	<div id="box2" class="box" style="opacity: 1;"></div>
+	<div id="box3" class="box"></div>
+	<div id="box4" class="box"></div>
+	<div id="box5" class="box"></div>
+	<div id="box6" class="box"></div>
+	<div id="box7" class="box"></div>
+
+	<audio id="sound" src="scream.mp3"></audio>
+
+<script type="text/javascript">
+
+		
+
+		var x = 0;
+
+		document.addEventListener("click", function(){
+
+
+			x = x+1
+			console.log(x)
+			box1.style.opacity = "1";
+					sound.play()
+
+			if (x==2)
+			{box2.style.opacity=1;
+			
+
+
+
+	}
+
+
+		if (x==3)
+			{box3.style.opacity=1}
+
+		if (x==4)
+			{box4.style.opacity=1}
+
+		// box.style.transform = "rotate(60deg)";
+		})
+	</script>
+</body>
+</html>
