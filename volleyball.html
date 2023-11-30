@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css"> 
+.volleyball{
+	width:200px;
+	height:200px;
+	background-image:url(https://cdn11.bigcommerce.com/s-2sxhiat0li/images/stencil/1280x1280/products/259/736/MS500-N_AD__31471.1462491985.jpg?c=2);
+	background-size: contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+	</style>
+</head>
+<body>
+
+<center> <h1> 18 volleyballs because im #18!</h1></center>
+
+
+<script type="text/javascript">
+	function makeVolleyball(x){
+		var ball = document.createElement("div")
+		document.body.appendChild(ball)
+
+		ball.classList.add("volleyball")
+		ball.innerText = x
+
+	}
+
+	for(var counter=1; counter<=18; counter=counter+1) {makeVolleyball(counter)}
+	
+</script>
+
+</body>
+</html>
