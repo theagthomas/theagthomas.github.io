@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css"> 
+
+
+    #face {
+        width: 580px;
+        height: 580px;
+        background-image: url("face.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #browneye {
+
+        background-image: url(browneye.png);
+        background-size: cover;
+    }
+
+    #blueeye {
+
+        background-image: url(blueeye.png);
+    }
+
+    #greeneye {
+        background-image: url(greeneye.png)
+    }
+
+    #greyeye {
+        background-image: url(greyeye.png)
+    }
+
+    #nose {
+        background-image: url(nose.png)
+    }
+
+    #pinklipstick {
+        background-image: url(pinklipstick.png);
+    }
+
+    #redlipstick {
+        background-image: url(redlipstick.png);
+    }
+
+    .feature {
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        display: inline-block;
+        position: relative;
+
+	</style>
+</head>
+<body>
+
+	<div class = "feature" id = "browneye"></div>
+	<div class = "feature" id = "blueeye"></div>
+	<div class = "feature" id = "greeneye"></div>
+	<div class = "feature" id = "greyeye"></div>
+	<div class = "feature" id = "nose" ></div>
+	<div class = "feature" id = "pinklipstick"></div>
+	<div class = "feature" id = "redlipstick"></div>
+
+	<div id = "face"></div>
+
+<script type="text/javascript">
+	var image;
+
+
+		
+
+
+	browneye.addEventListener ("click", function (){
+
+		image = "browneye.png"
+		console.log(image)
+	});
+
+	blueeye.addEventListener ("click", function (){
+
+		image = "blueeye.png"
+	});
+
+	greeneye.addEventListener ("click", function (){
+
+		image = "greeneye.png"
+	});
+
+	greyeye.addEventListener ("click", function (){
+
+		image = "greyeye.png"
+	});
+
+	nose.addEventListener ("click", function (){
+
+		image = "nose.png"
+	});
+
+	pinklipstick.addEventListener ("click", function (){
+
+		image = "pinklipstick.png"
+	});
+
+	redlipstick.addEventListener ("click", function (){
+
+		image = "redlipstick.png"
+	});
+
+
+
+
+	face.addEventListener("click", function makeDiv (event){
+
+		console.log("hi thea?")
+		var feature = document.createElement("div")
+		document.body.appendChild(feature)
+		feature.style.width = "100px"
+		feature.style.height = "100px"
+		feature.style.background = "blue"
+		// face.style.left = event.ClientX - 50 + "px";
+		// face.style.top = eventClientY - 50 + "px";
+
+
+		});
+</script>
+</body>
+</html>
