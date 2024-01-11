@@ -3,20 +3,61 @@
 <head>
 	
 	<title></title>
+	<style type="text/css">
+		.boxes{
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+			display: inline-block;
+			font-size: 100px;
+		}
+		
+		#one{
+			color: hotpink;
+		}
+		#two{
+			color: deepskyblue;
+		}
+		#three{
+			color: mediumpurple;
+		}
+		#handle{
+			background-color: black;
+		}
+	</style>
 </head>
 <body>
 
-Who's going to be a millionare? $$$
+
+
+<h1>Who's Going to be a Millionare? $$$</h1>
+<center>
+<div id="one" class="boxes"></div>
+<div id="two" class="boxes"></div>
+<div id="three" class="boxes"></div>
+<div id="handle" class="boxes"></div>
+</center>
+<h1> Reload the Page! </h1>
+
 
 	<script type="text/javascript">
 		
 		var people =["jake", "thea", "julia", "sajan", "henry", "chris"]
 
-		var names = Math.round(Math.random()*5)
+		handle.addEventListener("click", function(){
 
-		console.log(people[names])
+		var names1 = Math.round(Math.random()*5)
+		var names2 = Math.round(Math.random()*5)
+		var names3 = Math.round(Math.random()*5)
+
+
+		one.innerText = people[names1]
+		two.innerText = people[names2]
+		three.innerText = people[names3]
+	})
 
 	</script>
+
 
 </body>
 </html>
