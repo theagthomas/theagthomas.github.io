@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+
+	<style type="text/css">
+		
+		#box{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+		}
+
+	</style>
+</head>
+<body>
+	<center><b> <h1> Who's your favorite volleyball player? </h1> </b>
+	<div id ="box"></div>
+	</center>
+
+	<script type="text/javascript">
+		var number = -1;
+		var random;
+		var players = ["asjia oneal", "maddie skinner", "ella swindle", "emma halter", "elena scott", "avery skinner", "bekah allick", "harper murray", "ally batenhorst", "jordan thompson", "bergen reilly"]
+
+		document.addEventListener("click", function(){
+			random = Math.round(Math.random()*9)
+			number = number+1
+		box.innerText = players[random];
+		// box.style.backgroundImage = players[random]
+		if(number == 9){number = -1} //for if statement//
+		} //for function//
+	)
+
+
+	</script>
+
+</body>
+</html>
