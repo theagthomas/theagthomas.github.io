@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		.boxes{
+			width: 500px;
+			height: 500px;
+			border: 2px solid black;
+			display: inline-block;
+			font-size: 100px;
+		}
+		
+		#one{
+			color: hotpink;
+		}
+		#two{
+			color: deepskyblue;
+		}
+		
+	</style>
+</head>
+<body>
+
+
+
+<h1>What countries food are you going to eat? <h1>
+<center>
+<div id="one" class="boxes"></div>
+<div id="two" class="boxes"></div>
+</center>
+<h1> Reload the Page! </h1>
+
+
+	<script type="text/javascript">
+		
+		var people =["america", "india", "china", "japan", "mexico", "spain"]
+
+		two.addEventListener("click", function(){
+
+		var names1 = Math.round(Math.random()*5)
+		var names2 = Math.round(Math.random()*5)
+
+		one.innerText = people[names1]
+		two.innerText = people[names2]
+	})
+
+	</script>
+
+
+</body>
+</html>
