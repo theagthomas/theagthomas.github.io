@@ -26,7 +26,7 @@
 <body>
 	<center><b><h1>What country's food are you going to eat!?</h1></b>
 	<div id="box1"></div>
-	<div id="box2"></div>
+	<a id="linkA"><div id="box2"></div></a>
 
 	</center>
 
@@ -36,15 +36,19 @@
 
 		var flags = ["🇺🇸", "🇮🇳", "🇨🇳", "🇯🇵", "🇲🇽", "🇪🇸", "🇮🇹", "🇬🇷", "🇯🇲", "🇵🇱", "🇵🇷"]
 
-		 var images = ["url(https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/M6HASPARCZHYNN4XTUYT7H6PTE.jpg&w=1440)", "url(https://hips.hearstapps.com/hmg-prod/images/220907-delish-seo-chicken-tikka-masala-0212-eb-1675093094.jpg?crop=0.456xw:1.00xh;0.257xw,0&resize=980:*)", "url(https://therecipecritic.com/wp-content/uploads/2023/02/soup_dumplings.jpg)", "url(https://cdn.britannica.com/52/128652-050-14AD19CA/Maki-zushi.jpg)", "url(https://carlsbadcravings.com/wp-content/uploads/2022/12/Tamales-1a.jpg)", "url(https://assets.epicurious.com/photos/63ef9f657c3e98834ec8645e/4:3/w_5315,h_3986,c_limit/Paella_RECIPE_021523_47427.jpg)", "url(https://www.cookingclassy.com/wp-content/uploads/2012/11/spaghetti+with+meat+sauce11.jpg)", "url(https://www.modernhoney.com/wp-content/uploads/2023/03/Greek-Salad-2-scaled.jpg)", "url(https://images.immediate.co.uk/production/volatile/sites/30/2021/02/ackee-and-saltfish-c218a7b.jpg?resize=768,574)", "url(https://static01.nyt.com/images/2020/04/22/dining/21milkbarrex2/merlin_171379644_8f93d0c8-c7ca-41ae-a8f0-e09b4d0436ad-articleLarge.jpg?w=1280&q=75)", "url(https://www.chilipeppermadness.com/wp-content/uploads/2020/10/Pollo-Guisado-Recipe1.webp)"]
+		 var images = ["url(https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/M6HASPARCZHYNN4XTUYT7H6PTE.jpg&w=1440)", "url(https://hips.hearstapps.com/hmg-prod/images/220907-delish-seo-chicken-tikka-masala-0212-eb-1675093094.jpg?crop=0.456xw:1.00xh;0.257xw,0&resize=980:*)", "url(https://therecipecritic.com/wp-content/uploads/2023/02/soup_dumplings.jpg)", "https://www.readersdigest.ca/wp-content/uploads/2011/11/japanese-sushi-rolls-scaled.jpg", "url(https://carlsbadcravings.com/wp-content/uploads/2022/12/Tamales-1a.jpg)", "url(https://assets.epicurious.com/photos/63ef9f657c3e98834ec8645e/4:3/w_5315,h_3986,c_limit/Paella_RECIPE_021523_47427.jpg)", "url(https://www.cookingclassy.com/wp-content/uploads/2012/11/spaghetti+with+meat+sauce11.jpg)", "url(https://www.modernhoney.com/wp-content/uploads/2023/03/Greek-Salad-2-scaled.jpg)", "url(https://images.immediate.co.uk/production/volatile/sites/30/2021/02/ackee-and-saltfish-c218a7b.jpg?resize=768,574)", "url(https://static01.nyt.com/images/2020/04/22/dining/21milkbarrex2/merlin_171379644_8f93d0c8-c7ca-41ae-a8f0-e09b4d0436ad-articleLarge.jpg?w=1280&q=75)", "url(https://www.chilipeppermadness.com/wp-content/uploads/2020/10/Pollo-Guisado-Recipe1.webp)"]
+
+		 var recipes = ["https://www.washingtonpost.com/recipes/classic-grilled-hamburger/", "https://www.delish.com/cooking/recipe-ideas/a20151723/easy-chicken-tikka-masala-recipe/", "https://therecipecritic.com/soup-dumplings/", "https://www.readersdigest.ca/food/recipes/japanese-sushi-rolls/", "https://carlsbadcravings.com/how-to-make-mexican-tamales-recipe/", "https://www.epicurious.com/recipes/food/views/seafood-paella-366249", "https://www.cookingclassy.com/spaghetti-with-meat-sauce-authentic-italian-style/", "https://www.modernhoney.com/greek-salad/", "https://www.bbcgoodfood.com/recipes/ackee-saltfish", "https://www.allrecipes.com/recipe/109914/pierogi-polish-dumplings/", "https://www.chilipeppermadness.com/recipes/pollo-guisado/"]
 
 
 
-		document.addEventListener("click", function(){
-			random = Math.round(Math.random()*11)
+		box1.addEventListener("click", function(){
+			random = Math.round(Math.random()*10)
 			box1.innerText = countries[random]
 			box2.innerText=flags[random]
 			box1.style.backgroundImage = images[random]
+			linkA.href = recipes[random]
+
 
 		})
 	</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#car{
+			width: 550px;
+			height: 150px;
+			background-image: url("https://images-porsche.imgix.net/-/media/65786139D22F427E8EF7AB4E564E60FD_F792713686F24C9DBFFE7BE3C044E6DE_TA21Q2ZIX0012-taycan-side-view-frozenberrymetallic?w=2560&h=714&q=45&crop=faces%2Centropy%2Cedges&auto=format");
+			background-size: cover;
+			background-position: center;
+			position:absolute;
+			top:300px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="car"></div>
+	<script type="text/javascript">
+		var x = 0
+		var y = 0
+		
+		document.addEventListener("keydown", function(event){
+			console.log(event.key)
+
+			if (event.key == "ArrowRight"){
+				x=x+100
+				car.style.left = x + 'px'
+			}
+
+			if (event.key == "ArrowUp"){
+				y=y-100
+				car.style.top = y +'px'
+			}
+
+			if (event.key == "ArrowLeft"){
+				x=x-100
+				car.style.left = x + 'px'
+			}
+
+			if (event.key == "ArrowDown"){
+				y=y+100
+				car.style.top = y +'px'
+			}
+
+		})
+	</script>
+
+</body>
+</html>
