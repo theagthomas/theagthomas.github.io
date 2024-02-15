@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	</style>
+
+	<h1> What are you getting on your next test?</h1>
+	<body> Put your first name in below! </body>
+</head>
+<body>
+
+	<input id = "text"> </input>
+	<button id = "submit"> submit </button>
+
+	<script type="text/javascript">
+		submit.addEventListener("click", function(){
+			console.log(text.value)
+
+			if (text.value =="thea"){
+				alert("100%")
+			}
+
+			if (text.value =="jake"){
+				alert("0%")
+			}
+
+
+		})
+	</script>
+
+</body>
+</html>
