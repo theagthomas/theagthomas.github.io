@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VDAY CARD! </title>
+	<style type="text/css">
+		.row {
+            width: 100%;
+            text-align: center;
+        }
+
+
+		.div{
+			height: 275px;
+			width: 200px;
+			border: 10px lightpink;
+			display: inline-block;
+			background-color: lightpink;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 10px;
+			position: relative;
+			vertical-align: top;
+		}
+		.text{
+			position:relative;
+				top: 10%;
+				color:lightpink;
+				font-family: 'Dancing Script';
+		}
+			a{
+				text-decoration:none;
+			}
+			body{
+				background: #0000;
+				color: lightpink;
+			}
+	</style>
+</head>
+<body>
+	<center>
+		<h1> HAPPY VALENTINE'S DAY! </h1>
+		<p> Click on your picture! </p>
+		
+		<div class="row"> 
+			<div id="kayadiv" class="div"></div>
+			<div id="liladiv" class="div"></div>
+			<div id="sairadiv" class="div"></div>
+			<div id="logandiv" class="div"></div>
+		</div>
+
+		<div class="row">
+		<div id="minadiv" class="div"></div>
+		<div id="wongaildiv" class="div"></div>
+		<div id="sloandiv" class="div"></div>
+		<div id="fionadiv" class="div"></div>
+		</div>
+
+	</center>
+
+	<script type="text/javascript">
+	
+		kayadiv.addEventListener("click", function(){
+		kayadiv.style.backgroundImage = "url(vday1.jpg)"
+	})
+
+		liladiv.addEventListener("click", function(){
+		liladiv.style.backgroundImage = "url(vday2.jpg)"
+	})
+
+		sairadiv.addEventListener("click", function(){
+		sairadiv.style.backgroundImage = "url(vday3.jpg)"
+	})
+
+		logandiv.addEventListener("click", function(){
+		logandiv.style.backgroundImage = "url(vday4.jpg)"
+	})
+
+		minadiv.addEventListener("click", function(){
+		minadiv.style.backgroundImage = "url(vday5.jpg)"
+	})
+
+		wongaildiv.addEventListener("click", function(){
+		wongaildiv.style.backgroundImage = "url(vday6.jpg)"
+	})
+
+		sloandiv.addEventListener("click", function(){
+		sloandiv.style.backgroundImage = "url(vday7.jpg)"
+	})
+
+		fionadiv.addEventListener("click", function(){
+		fionadiv.style.backgroundImage = "url(vday8.jpg)"
+	})
+
+	</script>
+
+</body>
+</html>
