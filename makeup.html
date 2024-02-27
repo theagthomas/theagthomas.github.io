@@ -70,10 +70,6 @@
 <script type="text/javascript">
 	var image;
 
-
-		
-
-
 	browneye.addEventListener ("click", function (){
 
 		image = "browneye.png"
@@ -111,18 +107,16 @@
 	});
 
 
-
-
 	face.addEventListener("click", function makeDiv (event){
+		console.log(event)
 
 		console.log("hi thea?")
 		var feature = document.createElement("div")
 		document.body.appendChild(feature)
-		feature.style.width = "100px"
-		feature.style.height = "100px"
-		feature.style.background = "blue"
-		// face.style.left = event.ClientX - 50 + "px";
-		// face.style.top = eventClientY - 50 + "px";
+		
+		face.style.left = event.clientX - 50 + "px";
+		face.style.top = event.clientY - 50 + "px";
+
 
 
 		});
