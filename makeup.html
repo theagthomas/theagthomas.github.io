@@ -6,8 +6,8 @@
 
 
     #face {
-        width: 580px;
-        height: 580px;
+        width: 650px;
+        height: 650px;
         background-image: url("face.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -16,7 +16,7 @@
     #browneye {
 
         background-image: url(browneye.png);
-        background-size: cover;
+
     }
 
     #blueeye {
@@ -77,45 +77,51 @@
 	});
 
 	blueeye.addEventListener ("click", function (){
-
 		image = "blueeye.png"
+		console.log(image)
 	});
 
 	greeneye.addEventListener ("click", function (){
-
 		image = "greeneye.png"
+		console.log(image)
 	});
 
 	greyeye.addEventListener ("click", function (){
-
 		image = "greyeye.png"
+		console.log(image)
 	});
 
 	nose.addEventListener ("click", function (){
-
 		image = "nose.png"
+		console.log(image)
 	});
 
 	pinklipstick.addEventListener ("click", function (){
-
 		image = "pinklipstick.png"
+		console.log(image)
 	});
 
 	redlipstick.addEventListener ("click", function (){
-
 		image = "redlipstick.png"
+		console.log(image)
 	});
 
 
 	face.addEventListener("click", function makeDiv (event){
 		console.log(event)
 
-		console.log("hi thea?")
-		var feature = document.createElement("div")
-		document.body.appendChild(feature)
+		var div = document.createElement("div")
+		document.body.appendChild(div)
+		div.style.width = "100px"
+		div.style.height = "100px"
+		div.style.position = "absolute"
+		div.style.backgroundImage = "url('" + image + "')";
+		div.style.backgroundRepeat = "no-repeat";
+        div.style.backgroundSize = "contain";
+
 		
-		face.style.left = event.clientX - 50 + "px";
-		face.style.top = event.clientY - 50 + "px";
+		div.style.left = event.clientX - 50 + "px";
+		div.style.top = event.clientY - 50 + "px";
 
 
 
