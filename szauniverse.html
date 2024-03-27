@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SZA Universe</title>
+
+	<style type="text/css">
+		.planet{
+			height:200px;
+			width:200px;
+			background-image: url(saturn.png);
+			display: inline-block;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 10px;
+			position: absolute;
+
+		}
+
+		#neptune{
+            top: 25px;
+            left: 5px;
+        }
+
+        #mars{
+            top: 100px;
+            left: 300px;
+        }
+
+        #saturn{
+            top: 80px;
+            left: 900px;
+        }
+
+        #venus{
+        	top: 350px;
+        	left:50px
+        }
+
+        #sun{
+        	top:250px;
+        	left:600px;
+        }
+
+        #mercury{
+        	top:350px;
+        	left:775px;
+        }
+
+        #jupiter{
+        	top:250px;
+        	left:1100px;
+        }
+
+        #earth{
+        	top:550px;
+        	left:200px;
+        }
+
+        #uranus{
+        	top:575px;
+        	left:450;
+        }
+        .text{
+				position:relative;
+				top: -10%;
+				color:mediumpurple;
+				font-family: 'Averia Serif Libre';
+
+
+			}
+
+			a{
+				text-decoration:none;
+			}
+			body {
+				background: #0000;
+				color: mediumpurple;
+			}
+
+	</style>
+</head>
+<body>
+<center> 
+
+	<h1> SZAVERSE </h1>
+
+<div id = "neptune" class="planet"></div>
+<div id = "mars" class="planet"></div>
+<div id = "saturn" class="planet"></div>
+<div id = "venus" class="planet"></div>
+
+<div id = "sun" class="planet"></div>
+
+<div id = "mercury" class="planet"></div>
+<div id = "jupiter" class="planet"></div>
+<div id = "earth" class="planet"></div>
+<div id = "uranus" class="planet"></div>
+
+</center>
+
+<script type="text/javascript">
+	neptune.addEventListener("click", function(){
+	neptune.style.backgroundImage
+	console.log(neptune)
+})
+	mars.addEventListener("click", function(){
+	mars.style.backgroundImage
+	console.log(mars)
+})
+	saturn.addEventListener("click", function(){
+	saturn.style.backgroundImage = "url(saturn.png)"
+})
+	venus.addEventListener("click", function(){
+	venus.style.backgroundImage
+	console.log(venus)
+})
+
+	sun.addEventListener("click", function(){
+	sun.style.backgroundImage
+	console.log(sun)
+})
+
+	mercury.addEventListener("click", function(){
+	mercury.style.backgroundImage
+	console.log(mercury)
+})
+	jupiter.addEventListener("click", function(){
+	jupiter.style.backgroundImage
+	console.log(jupiter)
+})
+	earth.addEventListener("click", function(){
+	earth.style.backgroundImage
+	console.log(earth)
+})
+	uranus.addEventListener("click", function(){
+	uranus.style.backgroundImage
+	console.log(uranus)
+})
+</script>
+
+</body>
+</html>
